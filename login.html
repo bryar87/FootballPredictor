@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Football Prediction Challenge</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Football <span>Prediction</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link active">Login</a></li>
+                    <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                    <li class="nav-item"><a href="predictions.html" class="nav-link">Predictions</a></li>
+                </ul>
+                <!-- Hamburger Menu Toggle -->
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li class="mobile-nav-item"><a href="login.html" class="mobile-nav-link active">Login</a></li>
+            <li class="mobile-nav-item"><a href="register.html" class="mobile-nav-link">Register</a></li>
+            <li class="mobile-nav-item"><a href="predictions.html" class="mobile-nav-link">Predictions</a></li>
+        </ul>
+    </div>
+    
+    <!-- Background Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Ad Banner -->
+            <div class="banner-ad">
+                <img src="assets/banner_ad.svg" alt="Advertisement Banner">
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <div class="form-card fade-in">
+                <div class="form-header">
+                    <h2>Welcome Back!</h2>
+                    <p>Login to access your predictions</p>
+                </div>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <i class="fas fa-phone input-icon"></i>
+                        <input type="tel" id="phone" class="form-input" placeholder="07** *** ****" pattern="07[0-9]{2} [0-9]{3} [0-9]{4}" required>
+                        <div class="form-message" id="phone-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="password" class="form-input" placeholder="Enter your password" required>
+                        <div class="form-message" id="password-message"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <div class="form-message" id="form-message"></div>
+                </form>
+                <div class="form-link">
+                    Don't have an account? <a href="register.html">Register</a>
+                </div>
+                <div class="form-link">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Football Prediction Challenge. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

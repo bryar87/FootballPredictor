@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Prediction Challenge - Today's Game</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Football <span>Prediction</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                    <li class="nav-item"><a href="predictions.html" class="nav-link">Predictions</a></li>
+                </ul>
+                <!-- Hamburger Menu Toggle -->
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link active">Home</a></li>
+            <li class="mobile-nav-item"><a href="login.html" class="mobile-nav-link">Login</a></li>
+            <li class="mobile-nav-item"><a href="register.html" class="mobile-nav-link">Register</a></li>
+            <li class="mobile-nav-item"><a href="predictions.html" class="mobile-nav-link">Predictions</a></li>
+        </ul>
+    </div>
+    
+    <!-- Background Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Match Header -->
+    <section class="match-header">
+        <div class="container">
+            <h1 class="match-title">EL CLÁSICO</h1>
+            <h2 class="match-subtitle">Prediction Challenge</h2>
+            <p class="match-date">22/4/2025 | 20:00 PM</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Ad Banner -->
+            <div class="banner-ad">
+                <img src="assets/banner_ad.svg" alt="Advertisement Banner">
+            </div>
+
+            <!-- Match Display -->
+            <div class="match-container">
+                <div class="teams-container">
+                    <div class="team">
+                        <img src="assets/real_madrid.svg" alt="Real Madrid Logo" class="team-logo">
+                        <h3 class="team-name">Real Madrid</h3>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team">
+                        <img src="assets/barcelona.svg" alt="Barcelona Logo" class="team-logo">
+                        <h3 class="team-name">Barcelona</h3>
+                    </div>
+                </div>
+
+                <!-- Prediction Form -->
+                <div class="prediction-form fade-in">
+                    <h3 class="prediction-title">Enter Your Prediction</h3>
+                    <form id="prediction-form">
+                        <div class="prediction-row">
+                            <div class="team-prediction">
+                                <img src="assets/real_madrid.svg" alt="Real Madrid Logo" class="prediction-team-logo">
+                                <span class="prediction-team">Real Madrid</span>
+                                <input type="number" min="0" max="99" class="form-input prediction-input" required>
+                            </div>
+                            <div class="prediction-vs">VS</div>
+                            <div class="team-prediction">
+                                <img src="assets/barcelona.svg" alt="Barcelona Logo" class="prediction-team-logo">
+                                <span class="prediction-team">Barcelona</span>
+                                <input type="number" min="0" max="99" class="form-input prediction-input" required>
+                            </div>
+                        </div>
+                        <div class="form-message" id="prediction-message"></div>
+                        <button type="submit" class="btn btn-accent btn-block">Submit Prediction</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Football Prediction Challenge. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Confirmation Popup -->
+    <div class="popup-container" id="confirmationPopup">
+      <div class="popup">
+        <div class="popup-icon">✓</div>
+        <h3 class="popup-title">Your prediction has been submitted!</h3>
+        <p class="popup-message">Good luck! 🍀</p>
+        <button class="popup-close" id="closePopup">Got it</button>
+      </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

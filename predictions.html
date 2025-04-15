@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Predictions - Football Prediction Challenge</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Football <span>Prediction</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                    <li class="nav-item"><a href="predictions.html" class="nav-link active">Predictions</a></li>
+                </ul>
+                <!-- Hamburger Menu Toggle -->
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li class="mobile-nav-item"><a href="login.html" class="mobile-nav-link">Login</a></li>
+            <li class="mobile-nav-item"><a href="register.html" class="mobile-nav-link">Register</a></li>
+            <li class="mobile-nav-item"><a href="predictions.html" class="mobile-nav-link active">Predictions</a></li>
+        </ul>
+    </div>
+    
+    <!-- Background Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Predictions Header -->
+    <section class="match-header">
+        <div class="container">
+            <h1>User Predictions</h1>
+            <p>View all submitted predictions for upcoming matches</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Ad Banner -->
+            <div class="banner-ad">
+                <img src="assets/banner_ad.svg" alt="Advertisement Banner">
+            </div>
+            
+            <h2 class="fade-in">El Clásico Predictions</h2>
+            
+            <!-- Predictions Table View (Desktop) -->
+            <div class="predictions-table prediction-table-view fade-in">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>User</th>
+                            <th>Match</th>
+                            <th>Prediction</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>April 20, 2023</td>
+                            <td>John D.</td>
+                            <td>
+                                <div class="prediction-result">
+                                    <img src="assets/real_madrid.svg" alt="Real Madrid" width="30">
+                                    <span>vs</span>
+                                    <img src="assets/barcelona.svg" alt="Barcelona" width="30">
+                                </div>
+                            </td>
+                            <td>2 - 1</td>
+                        </tr>
+                        <tr>
+                            <td>April 19, 2023</td>
+                            <td>Sarah T.</td>
+                            <td>
+                                <div class="prediction-result">
+                                    <img src="assets/real_madrid.svg" alt="Real Madrid" width="30">
+                                    <span>vs</span>
+                                    <img src="assets/barcelona.svg" alt="Barcelona" width="30">
+                                </div>
+                            </td>
+                            <td>1 - 3</td>
+                        </tr>
+                        <tr>
+                            <td>April 19, 2023</td>
+                            <td>Michael R.</td>
+                            <td>
+                                <div class="prediction-result">
+                                    <img src="assets/real_madrid.svg" alt="Real Madrid" width="30">
+                                    <span>vs</span>
+                                    <img src="assets/barcelona.svg" alt="Barcelona" width="30">
+                                </div>
+                            </td>
+                            <td>2 - 2</td>
+                        </tr>
+                        <tr>
+                            <td>April 18, 2023</td>
+                            <td>Emma W.</td>
+                            <td>
+                                <div class="prediction-result">
+                                    <img src="assets/real_madrid.svg" alt="Real Madrid" width="30">
+                                    <span>vs</span>
+                                    <img src="assets/barcelona.svg" alt="Barcelona" width="30">
+                                </div>
+                            </td>
+                            <td>0 - 1</td>
+                        </tr>
+                        <tr>
+                            <td>April 18, 2023</td>
+                            <td>David C.</td>
+                            <td>
+                                <div class="prediction-result">
+                                    <img src="assets/real_madrid.svg" alt="Real Madrid" width="30">
+                                    <span>vs</span>
+                                    <img src="assets/barcelona.svg" alt="Barcelona" width="30">
+                                </div>
+                            </td>
+                            <td>3 - 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Prediction Cards (Mobile) -->
+            <div class="prediction-cards fade-in">
+                <div class="prediction-card">
+                    <div class="prediction-card-header">
+                        <span class="prediction-user">John D.</span>
+                        <span class="prediction-date">April 20, 2023</span>
+                    </div>
+                    <div class="prediction-card-teams">
+                        <div class="team">
+                            <img src="assets/real_madrid.svg" alt="Real Madrid" width="40">
+                            <span>Real Madrid</span>
+                        </div>
+                        <div class="prediction-card-result">2 - 1</div>
+                        <div class="team">
+                            <img src="assets/barcelona.svg" alt="Barcelona" width="40">
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prediction-card">
+                    <div class="prediction-card-header">
+                        <span class="prediction-user">Sarah T.</span>
+                        <span class="prediction-date">April 19, 2023</span>
+                    </div>
+                    <div class="prediction-card-teams">
+                        <div class="team">
+                            <img src="assets/real_madrid.svg" alt="Real Madrid" width="40">
+                            <span>Real Madrid</span>
+                        </div>
+                        <div class="prediction-card-result">1 - 3</div>
+                        <div class="team">
+                            <img src="assets/barcelona.svg" alt="Barcelona" width="40">
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prediction-card">
+                    <div class="prediction-card-header">
+                        <span class="prediction-user">Michael R.</span>
+                        <span class="prediction-date">April 19, 2023</span>
+                    </div>
+                    <div class="prediction-card-teams">
+                        <div class="team">
+                            <img src="assets/real_madrid.svg" alt="Real Madrid" width="40">
+                            <span>Real Madrid</span>
+                        </div>
+                        <div class="prediction-card-result">2 - 2</div>
+                        <div class="team">
+                            <img src="assets/barcelona.svg" alt="Barcelona" width="40">
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prediction-card">
+                    <div class="prediction-card-header">
+                        <span class="prediction-user">Emma W.</span>
+                        <span class="prediction-date">April 18, 2023</span>
+                    </div>
+                    <div class="prediction-card-teams">
+                        <div class="team">
+                            <img src="assets/real_madrid.svg" alt="Real Madrid" width="40">
+                            <span>Real Madrid</span>
+                        </div>
+                        <div class="prediction-card-result">0 - 1</div>
+                        <div class="team">
+                            <img src="assets/barcelona.svg" alt="Barcelona" width="40">
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prediction-card">
+                    <div class="prediction-card-header">
+                        <span class="prediction-user">David C.</span>
+                        <span class="prediction-date">April 18, 2023</span>
+                    </div>
+                    <div class="prediction-card-teams">
+                        <div class="team">
+                            <img src="assets/real_madrid.svg" alt="Real Madrid" width="40">
+                            <span>Real Madrid</span>
+                        </div>
+                        <div class="prediction-card-result">3 - 2</div>
+                        <div class="team">
+                            <img src="assets/barcelona.svg" alt="Barcelona" width="40">
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Football Prediction Challenge. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
